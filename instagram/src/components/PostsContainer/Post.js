@@ -1,5 +1,6 @@
 import React from "react";
 
+import PropTypes from "prop-types";
 import CommentSection from "../CommentSection/CommentSectionContainer";
 import PostHeader from "./PostHeader";
 import heart from "../../assets/heart.png";
@@ -22,14 +23,22 @@ const Post = (props) => {
         />
       </div>
       <div className="logo">
-      <img alt="heart logo" src={heart} className="heart-logo" />
-      <img alt="comment logo" src={comment} className="comment-logo" />
+        <img alt="heart logo" src={heart} className="heart-logo" />
+        <img alt="comment logo" src={comment} className="comment-logo" />
       </div>
       <div className="post-content-likes">{props.post.likes} likes</div>
       {/* <div className="comment-timestamp">{props.post.timestamp}</div> */}
       <CommentSection comments={props.post.comments} />
     </div>
   );
+};
+
+Post.propTypes = {
+  username: PropTypes.string,
+  thumbnailUrl: PropTypes.string,
+  imageUrl: PropTypes.string,
+  likes: PropTypes.number,
+  comments: PropTypes.array
 };
 
 export default Post;
