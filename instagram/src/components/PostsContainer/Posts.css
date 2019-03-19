@@ -34,15 +34,16 @@
 .post-image {
   width: 100%;
 }
-.post-content-likes {
+/* .post-content-likes {
   font-size: 1rem;
   font-weight: bold;
   margin-left: 20px;
   padding-bottom: 5px;
-}
-.logo {
+  border: 1px solid red;
+} */
+.logos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px;
 }
 .heart-logo {
@@ -52,4 +53,9 @@
 .comment-logo {
   height: 30px;
   padding-right: 20px;
+}
+.likes-logo{
+  font-size: 1rem;
+  padding: 8px 0;
+  font-weight: bold;
 }
