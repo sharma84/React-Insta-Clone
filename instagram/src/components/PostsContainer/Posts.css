@@ -34,13 +34,6 @@
 .post-image {
   width: 100%;
 }
-/* .post-content-likes {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-left: 20px;
-  padding-bottom: 5px;
-  border: 1px solid red;
-} */
 .logos {
   display: flex;
   flex-direction: column;
@@ -54,7 +47,7 @@
   height: 30px;
   padding-right: 20px;
 }
-.likes-logo{
+.likes-logo {
   font-size: 1rem;
   padding: 8px 0;
   font-weight: bold;

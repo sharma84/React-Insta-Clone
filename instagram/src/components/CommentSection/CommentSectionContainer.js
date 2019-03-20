@@ -9,20 +9,20 @@ class CommentSection extends React.Component {
     super(props);
     this.state = {
       comments: props.comments,
-      comment: ""
+      comment: "" //add a comment box = empty
     };
   }
 
-  commentHandler = (e) => {
-    this.setState({ comment: e.target.value });
+  changeComment = (e) => {
+    this.setState({ comment: e.target.value }); 
   };
-
-  addNewComment = (e) => {
+  
+  submitComment = (e) => {
     e.preventDefault();
-    const newComment = { text: this.state.comment, username: "Lambda" };
-    const comments = this.state.comments.slice();
-    comments.push(newComment);
-    this.setState({ comments, comment: "" });
+    const newAddedComment = { text: this.state.comment, username: "Lambda" };
+    const newCommentsArray = this.state.comments.slice();
+    newCommentsArray.push(newAddedComment);
+    this.setState({ comments:newCommentsArray, comment: "" }); 
   };
 
   render() {
@@ -32,9 +32,9 @@ class CommentSection extends React.Component {
           <Comment key={i} comment={c} />
         ))}
         <CommentInput
-          comment={this.state.comment}
-          submitComment={this.addNewComment}
-          changeComment={this.commentHandler}
+          comment={this.state.comment} 
+          submitComment={this.submitComment}
+          changeComment={this.changeComment}
         />
       </div>
     );

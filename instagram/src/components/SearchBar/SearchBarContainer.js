@@ -14,7 +14,13 @@ const SearchBar = (props) => {
         <img alt="camera logo" src={camera} className="camera-logo" />
         <img alt="instagram logo" src={iglogo} className="insta-logo" />
       </div>
-      <input type="text" placeholder=" 🔍 Search" className="search" onKeyDown={props.searchPosts} />
+      <input
+        type="text"
+        placeholder=" 🔍 Search"
+        className="search"
+        onKeyDown={props.searchPosts}
+ 
+      />
       <div className="icon">
         <img alt="compass logo" src={compass} className="compass-icon" />
         <img alt="heart logo" src={heart} className="heart-icon" />
