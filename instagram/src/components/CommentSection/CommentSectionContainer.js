@@ -14,25 +14,25 @@ class CommentSection extends React.Component {
   }
 
   changeComment = (e) => {
-    this.setState({ comment: e.target.value }); 
+    this.setState({ comment: e.target.value });
   };
-  
+
   submitComment = (e) => {
     e.preventDefault();
     const newAddedComment = { text: this.state.comment, username: "Lambda" };
     const newCommentsArray = this.state.comments.slice();
     newCommentsArray.push(newAddedComment);
-    this.setState({ comments:newCommentsArray, comment: "" }); 
+    this.setState({ comments: newCommentsArray, comment: "" });
   };
 
   render() {
     return (
-      <div className="comment-container">
+      <div>
         {this.state.comments.map((c, i) => (
           <Comment key={i} comment={c} />
         ))}
         <CommentInput
-          comment={this.state.comment} 
+          comment={this.state.comment}
           submitComment={this.submitComment}
           changeComment={this.changeComment}
         />

@@ -31,14 +31,11 @@ class PostsPage extends Component {
 
   render() {
     return (
-      <div className="PostsPage">
-        <SearchBar
-          searchPosts={this.searchBarHandler}
-  
-        />
+      <div>
+        <SearchBar searchPosts={this.searchBarHandler} />
         {/* <PostsContainer posts={this.state.posts} /> */}
         <PostsContainer
-          posts = {
+          posts={
             this.state.matchedPosts.length > 0
               ? this.state.matchedPosts
               : this.state.posts

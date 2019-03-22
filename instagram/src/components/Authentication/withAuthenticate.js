@@ -20,9 +20,9 @@ class extends React.Component {
 //check local storage
 
 render () {
-if (this.state.loggedIn) return <PostsPage />;
-    return <LoginPage />
-    // return <PostsPage />
+// if (this.state.loggedIn) return <PostsPage />;
+//     return <LoginPage />
+    return <PostsPage />
     }
 };
 
