@@ -35,8 +35,8 @@ const LogoImage = styled.img`
 `;
 
 const SearchBox = styled.div`
-margin: 0;
-padding-right: 80px;
+  margin: 0;
+  padding-right: 80px;
 `;
 
 const Input = styled.input`
@@ -56,12 +56,12 @@ const SearchBar = (props) => {
         <LogoImage alt="instagram logo" src={iglogo} />
       </LogoHeader>
       <SearchBox>
-      <Input
-        type="text"
-        placeholder=" 🔍 Search"
-        className="search"
-        onKeyDown={props.searchPosts}
-      />
+        <Input
+          type="text"
+          placeholder=" 🔍 Search"
+          className="search"
+          onKeyDown={props.searchPosts}
+        />
       </SearchBox>
       <IconHeader>
         <LogoImage alt="compass logo" src={compass} />

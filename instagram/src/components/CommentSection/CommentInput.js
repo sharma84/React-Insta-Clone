@@ -10,7 +10,7 @@ const Input = styled.input`
   border: none;
   font-size: 1rem;
   color: lightgray;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid lightgray;
 `;
 
 const CommentInput = (props) => {
@@ -22,7 +22,7 @@ const CommentInput = (props) => {
       value={props.comment}
       onChange={props.changeComment}
     />
-    // add three dots 
+    // add three dots
   );
 };
 

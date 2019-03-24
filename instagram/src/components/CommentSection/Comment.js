@@ -17,14 +17,14 @@ const ContentWrapper = styled.div`
   align-items: center;
 `;
 
-const Username = styled.div`
+const UsernameDiv = styled.div`
   height: 100%;
   text-align: center;
   font-size: 1rem;
   font-weight: bold;
 `;
 
-const CommentComment = styled.div`
+const CommentDiv = styled.div`
   font-weight: normal;
   font-size: 1rem;
   padding-left: 5px;
@@ -34,8 +34,8 @@ const Comment = (props) => {
   return (
     <CommentBox>
       <ContentWrapper>
-        <Username>{props.comment.username}</Username>
-        <CommentComment>{props.comment.text}</CommentComment>
+        <UsernameDiv>{props.comment.username}</UsernameDiv>
+        <CommentDiv>{props.comment.text}</CommentDiv>
       </ContentWrapper>
     </CommentBox>
   );
